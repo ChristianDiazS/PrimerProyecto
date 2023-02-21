@@ -71,7 +71,22 @@ input, textarea {
   
 button[type="submit"]:hover {
     background-color: #3e8e41;
+    color: white;  
+    border: 2px solid #444;
+    transition: 0.8s;
   }
+
+button {
+    background-color: #cccccc;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+} 
   
 footer {
     background-color: #ccc;
