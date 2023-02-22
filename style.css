@@ -43,6 +43,99 @@ main {
 section {
     margin-bottom: 40px;
 }
+
+/* inicio del carrusel */
+.toggle {
+    color: #d1faf4;
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .center {
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrusel_cont {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .img_carrusel_cont {
+    width: 360px;
+    height: 200px;
+    background-color: #b6a9a9;
+    border-radius: 25px;
+    box-shadow: 0px 10px 10px #00000030;
+    overflow: hidden;
+  }
+  
+  .fade { animation: fade .5s ease-in; }
+  
+  @keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+  }
+  
+  button {
+    width: 50px;
+    height: 50px;
+    color: #8c0047;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px #00000030;
+  }
+  
+  button:hover { background-color: #fbe6ff; }
+  
+  .dot_cont {
+    width: 500px;
+    height: 30px;
+    position: absolute;
+    bottom: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 3px;
+    cursor: pointer;
+  }
+  
+  .dot:hover { background-color: #8c0035; }
+  .active1 { background-color: #8c0055; }
+  .active1:hover { background-color: #8c0055}
+
+  .description {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+  }
+
+  /* inicio de la section 2*/
   
 section h2 {
     margin-bottom: 20px;
@@ -74,10 +167,26 @@ button[type="submit"]:hover {
   }
   
 footer {
-    background-color: #ccc;
+    background-color: #9c9a9a;
     color: #444;
     text-align: center;
     padding: 20px;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+footer nav li {
+    margin-right: 20px;
+}
+  
+footer nav a {
+    color: #fff;
+    text-decoration: none;
 }
   
 @media only screen and (max-width: 600px) {
