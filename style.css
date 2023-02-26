@@ -1,206 +1,233 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
   
-header {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {  
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 40px;
+  display: flex;  
+}
+
+.nav-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}  
+  
+.menu-head {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;  
+}
+
+.texto__menu-head {
+  margin: 0 1em;
+  font-size: 1.5em;  
 }
   
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+.menu-head___texto {  
+  color: #fff;  
+  text-decoration: none;
+  padding: 0.5em 1.0em;
+  border-radius: 0.5em;
   
-nav li {
-    margin-left: 20px;
 }
-  
-nav a {
-    color: #fff;
-    text-decoration: none;
+
+.menu-head___texto:hover {
+  color: #666666;
 }
   
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
   
 section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 /* inicio del carrusel */
 .toggle {
-    color: #d1faf4;
-    margin-right: 20px;
-    font-size: 30px;
-    transform: rotate(90deg);
-    cursor: pointer;
-    transition: .3s;
-    display: none;
-  }
+  color: #d1faf4;
+  margin-right: 20px;
+  font-size: 30px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: .3s;
+  display: none;
+}
   
-  .rotate {
-    transform: rotate(180deg);
-  }
+.rotate {
+  transform: rotate(180deg);
+}
   
-  .center {
-    width: 100%;
-    height: 25vh;
-    margin-bottom: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.center {
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  .carrusel_cont {
-    width: 500px;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.carrusel_cont {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  .img_carrusel_cont {
-    width: 360px;
-    height: 200px;
-    background-color: #b6a9a9;
-    border-radius: 25px;
-    box-shadow: 0px 10px 10px #00000030;
-    overflow: hidden;
-  }
+.img_carrusel_cont {
+  width: 360px;
+  height: 200px;
+  background-color: #b6a9a9;
+  border-radius: 25px;
+  box-shadow: 0px 10px 10px #00000030;
+  overflow: hidden;
+}
   
-  .fade { animation: fade .5s ease-in; }
+.fade { animation: fade .5s ease-in; }
   
-  @keyframes fade {
-    from {opacity: .8}
-    to {opacity: 1}
-  }
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
   
-  button {
-    width: 50px;
-    height: 50px;
-    color: #8c0047;
-    background-color: #fff;
-    border-radius: 10px;
-    font-size: 25px;
-    font-weight: bolder;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px #00000030;
-  }
+button {
+  width: 50px;
+  height: 50px;
+  color: #8c0047;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px #00000030;
+}
   
-  button:hover { background-color: #fbe6ff; }
+button:hover { 
+  background-color: #fbe6ff;
+}
+ 
+.dot_cont {
+  width: 500px;
+  height: 30px;
+  position: absolute;
+  bottom: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  .dot_cont {
-    width: 500px;
-    height: 30px;
-    position: absolute;
-    bottom: 205px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 3px;
+  cursor: pointer;
+}
   
-  .dot {
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    border-radius: 50px;
-    margin: 3px;
-    cursor: pointer;
-  }
-  
-  .dot:hover { background-color: #8c0035; }
-  .active1 { background-color: #8c0055; }
-  .active1:hover { background-color: #8c0055}
+.dot:hover {
+  background-color: #8c0035;
+}
 
-  .description {
-    width: 100%;
-    height: 10vh;
-    position: relative;
-  }
+.active1 {
+  background-color: #8c0055;
+}
 
-  /* inicio de la section 2*/
+.active1:hover {
+  background-color: #8c0055;
+}
+
+.description {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+}
+
+/* inicio de la section 2*/
   
 section h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
   
 section ul {
-    list-style: disc;
-    margin-left: 20px;
+  list-style: disc;
+  margin-left: 20px;
 }
   
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
   
 label {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
   
 input, textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
   
 button[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
+  background-color: #3e8e41;
+}
   
-footer {
-    background-color: #9c9a9a;
-    color: #444;
-    text-align: center;
-    padding: 20px;
+.container-footer {
+  background-color: #303c3f;
+  color: white;
+  padding: 2rem;
 }
 
-footer nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.menu-footer {
+  list-style: none;
+  display: flex;
 }
   
-footer nav li {
-    margin-right: 20px;
+.texto__menu-footer {
+  margin-right: 2rem;
 }
   
-footer nav a {
-    color: #fff;
-    text-decoration: none;
+.menu-footer___texto {
+  color: #e9f7ef;    
+}
+
+p {
+  font-size: 0.8rem;
+  text-align: center;
 }
   
 @media only screen and (max-width: 600px) {
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      margin-top: 20px;
-    }
-  
-    nav li {
-      margin: 0;
-    }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  nav li {
+    margin: 0;
+  }
 }
