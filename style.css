@@ -119,7 +119,7 @@ button {
 button:hover { 
   background-color: #fbe6ff;
 }
- 
+
 .dot_cont {
   width: 500px;
   height: 30px;
@@ -229,5 +229,29 @@ p {
   }
   nav li {
     margin: 0;
+  }
+}
+
+/*Svegam*/
+/*Contacto Botón*/
+#contact button {
+  width: 100%;
+}
+#contact button:hover {
+  background-color: #3e8e4187;
+}
+
+/*Nosotros*/
+.about p {
+  font-size: 12pt;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .texto__menu-head {
+    margin: 0 1em 0 0;
   }
 }
